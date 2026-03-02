@@ -1,0 +1,19 @@
+# ── Web framework ──────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9          # multipart/form-data (file uploads)
+
+# ── Database ────────────────────────────────────────────────
+asyncpg==0.29.0                  # async PostgreSQL driver
+sqlalchemy[asyncio]==2.0.30      # ORM + async support
+pgvector==0.2.5                  # pgvector SQLAlchemy type
+
+# ── PDF parsing ─────────────────────────────────────────────
+pdfplumber==0.11.0               # text extraction from PDFs
+
+# ── Embeddings (local, no API key needed) ───────────────────
+sentence-transformers==3.0.1     # all-MiniLM-L6-v2  (384-dim)
+
+# ── Utilities ───────────────────────────────────────────────
+python-dotenv==1.0.1
+pydantic==2.7.1
